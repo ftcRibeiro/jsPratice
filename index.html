@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input id="nome"/>
+            <button class="botaoCampo" id="botaoNome">Adicionar</button>
+        </div>
+        <!-- Sempre utilizar como ultimo elemento o codigo js -->
+        <script>
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href', 'http://rocketseat.com.br');
+            var textElement = document.createTextNode('Acessar site da rocketseat');
+            linkElement.appendChild(textElement);
+
+            var container = document.querySelector('#app');
+            container.appendChild(linkElement);
+            
+            // var inputElement = document.querySelector('#nome');
+            // container.removeChild(inputElement);
+
+        </script>
+    </body>
+</html>
